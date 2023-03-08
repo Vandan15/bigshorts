@@ -5,9 +5,11 @@ const Logo = '/logo.svg'
 const banner1 = '/contact-us.jpg';
 const banner2 = '/about-us.jpg';
 const banner3 = '/policy.jpg';
+const playstoreIcon = "/img/ion_logo-google-playstore.png"
 
 const googlePlay = '/google-play.png';
 const appStore = '/app-store.png';
+const Apple = "/img/Apple.png"
 export default function Header(props) {
   const [toggle, setToggle] = useState(false);
   const [close, setClose] = useState(false);
@@ -111,8 +113,17 @@ export default function Header(props) {
               <li><Link href='/about-us'>Contact Us</Link></li>
             </ul>
             <div className='download-wrapper'>
-              <img src={googlePlay}></img>
-              <img src={appStore}></img>
+            <div className="iconBox">
+                <div className="boxDesign">
+                  <img src={playstoreIcon} />+
+
+                  <p>Google Play</p>
+                </div>
+                <div className="boxDesign">
+                  <img src={Apple} />
+                  <p>App Store</p>
+                </div>
+              </div>
               </div>
           </div>
         )

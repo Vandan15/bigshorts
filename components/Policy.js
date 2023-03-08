@@ -52,7 +52,7 @@ export default function Policy() {
                         </div>
                         <div className='mb-5'>
                             <h4>Contact Us:</h4>
-                            <p>If you have any questions or concerns regarding our Privacy Policy, please contact us at <a href='mailto:info@bigshorts.net'>info@bigshorts.net</a>.</p>
+                            <p>If you have any questions or concerns regarding our Privacy Policy, please contact us at <a href='mailto:notification@bigshorts.in'>notification@bigshorts.in</a>.</p>
                         </div>
                     </div>
                 </div>
