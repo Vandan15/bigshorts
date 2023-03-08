@@ -604,6 +604,7 @@ h6 {
         iframe {
             width: 100% !important;
             height: 500px !important;
+            filter: grayscale(100%);
         }
     }
 }
