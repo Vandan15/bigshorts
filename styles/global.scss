@@ -600,7 +600,7 @@ h6 {
 
 .homepage {
     .bannerbg {
-        background-image: url(../public/img/BGBlur.png);
+        background-image: url(/img/BGBlur.png);
         background-size: cover;
 
         .textbanner {
@@ -916,7 +916,7 @@ h6 {
 
     .boxBigShorts {
         .bgcolorbanner {
-            background-image: url(../public/img/BigShorts.png);
+            background-image: url(/img/BigShorts.png);
             padding: 70px 45px 10px;
             text-align: center;
             border-radius: 25px;
