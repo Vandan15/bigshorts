@@ -14,7 +14,8 @@ export default function ContactUs() {
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1 10.3889C1 5.04658 5.5 1.5 10 1.5C14.5 1.5 19 5.05556 19 10.3889C19 15.7222 14.1199 20.6281 10 25.5C5.9205 20.604 1 15.7312 1 10.3889ZM10 13.5C11.5533 13.5 12.8125 12.2208 12.8125 10.6429C12.8125 9.0649 11.5533 7.78571 10 7.78571C8.4467 7.78571 7.1875 9.0649 7.1875 10.6429C7.1875 12.2208 8.4467 13.5 10 13.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
 
-                                <p>401 -C & D Abhishek Premises, off Link Road, near Oberoi chambers, opp. lotus business park, Andheri West-400058-mumbai -India</p>
+                                <p>401 -C & D Abhishek Premises, off Link Road, near Oberoi chambers, opp. lotus business park,
+                                    Andheri West-400058-mumbai-India</p>
                             </div>
 
                             <h3>Contact Details</h3>
@@ -23,7 +24,7 @@ export default function ContactUs() {
                                     <path d="M22.2857 0.928558H1.71429C1.25963 0.928558 0.823593 1.10917 0.502103 1.43066C0.180612 1.75215 0 2.18819 0 2.64284V16.3571C0 16.8118 0.180612 17.2478 0.502103 17.5693C0.823593 17.8908 1.25963 18.0714 1.71429 18.0714H22.2857C22.7404 18.0714 23.1764 17.8908 23.4979 17.5693C23.8194 17.2478 24 16.8118 24 16.3571V2.64284C24 2.18819 23.8194 1.75215 23.4979 1.43066C23.1764 1.10917 22.7404 0.928558 22.2857 0.928558ZM20.4 2.64284L12 8.45427L3.6 2.64284H20.4ZM1.71429 16.3571V3.42284L11.5114 10.2028C11.6549 10.3024 11.8254 10.3557 12 10.3557C12.1746 10.3557 12.3451 10.3024 12.4886 10.2028L22.2857 3.42284V16.3571H1.71429Z" fill="white" />
                                 </svg>
 
-                                <p><a href='mailto:info@bigshorts.net'>info@bigshorts.net</a></p>
+                                <p><a href='mailto:notification@bigshorts.in'>notification@bigshorts.in</a></p>
                             </div>
                             <div className='address'>
                                 <svg fill="#ffffff" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
