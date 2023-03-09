@@ -55,7 +55,7 @@ export default function Home() {
           <div className="container">
             <div className="textbanner">
               <h2>
-                World's <span>1st</span> Interactive Social  Media Platform!
+                World's <span>1<sup>st</sup></span> Interactive Social  Media Platform!
               </h2>
               <p>Home to a variety of interactive content, making it the perfect place to connect and engage with like-minded individuals.</p>
             </div>
