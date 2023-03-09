@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@900&family=Inter:wght@400;500&display=swap');
 $grey-color: #333333;
 $light-grey-color: #e0e0e0;
 $blue-color: #2f80ed;
@@ -720,6 +720,7 @@ h6 {
                 line-height: 75px;
                 background: linear-gradient(to left, #eed4fc 0%, #e0fdff 100%);
                 -webkit-background-clip: text;
+                font-family: 'Inter Tight', sans-serif;
                 // -webkit-text-fill-color: transparent;
 
                 @media (max-width: 991px) {
@@ -812,6 +813,7 @@ h6 {
             max-width: 750px;
             margin: auto;
             position: relative;
+            transition: visi;
 
             img {
                 width: 290px;
@@ -820,10 +822,12 @@ h6 {
 
             .towImage {
                 display: none;
+                transition: 1s;
             }
 
             .boxshodw {
                 position: absolute;
+                transition: 1s;
 
                 top: 0;
 
@@ -841,6 +845,7 @@ h6 {
                 left: 35%;
                 top: 0;
                 visibility: hidden;
+                z-index: -1;
                 @media (max-width: 991px) {
                     display: none;
                 }
@@ -849,14 +854,17 @@ h6 {
             &:hover {
                 .towImage {
                     display: block;
+                    transition-delay:0.2s;
                 }
 
                 .oneImage {
                     display: none;
+                    transition-delay:0.2s;
                 }
                 .mob-design {
                     visibility: visible;
                     z-index: -1;
+                    transition:all 5s;
                 }
             }
         }
