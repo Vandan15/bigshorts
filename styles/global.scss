@@ -706,6 +706,7 @@ h6 {
     .bannerbg {
         background-image: url(/bg-separate.png);
         background-size: cover;
+        background-position: center;
 
         .textbanner {
             text-align: center;
@@ -855,6 +856,7 @@ h6 {
                 }
                 .mob-design {
                     visibility: visible;
+                    z-index: -1;
                 }
             }
         }
