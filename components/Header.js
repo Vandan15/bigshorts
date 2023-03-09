@@ -129,7 +129,7 @@ export default function Header(props) {
       }
       {
         close && (
-          <div className='sidebar'>
+          <div className='sidebar' style={{height:document.body.scrollHeight}}>
             {
               close && (
                 <svg className='close-btn' width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" onClick={() => setClose(!close)}>
