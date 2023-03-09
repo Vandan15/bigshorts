@@ -47,9 +47,17 @@ h6 {
     align-items: center;
     position: relative;
     z-index: 9;
+    padding-top: 20px !important;
 
     .logo {
         cursor: pointer;
+        svg {
+            &:hover {
+                g {
+                    filter: url(#filter0_d_113_7437);
+                }
+            }
+        }
     }
 
     .list-wrapper {
@@ -188,25 +196,39 @@ h6 {
 
 .sidebar {
     position: absolute;
-    top: 100px;
+    top: 0;
     background-color: $black-color;
     width: 100%;
     z-index: 99;
     height: 100%;
+    .close-btn {
+        position: absolute;
+        right: 24px;
+        top: 40px;
+    }
 
     ul {
+        padding: 0;
         li {
             padding: 10px 0;
             list-style: none;
+            text-align: center;
+            margin-bottom: 45px;
 
             &:first-child {
-                padding-top: 50px;
+                margin-top: 100px;
+            }
+            &:last-child {
+                margin-bottom: 77px;
             }
 
             a {
                 color: $white-color;
                 text-decoration: none;
-                font-size: 16px;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
 
                 &:hover {
                     color: $blue-color;
@@ -217,14 +239,82 @@ h6 {
 
     .download-wrapper {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+        flex-direction: column;
+        align-items: center;
+        p {
+            color: $white-color;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
         }
-        // flex-direction: column;
+        .download {
+            display: flex;
+            justify-content: space-between;
+
+            .apple {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                &:last-child {
+                    margin-left: 50px;
+                }
+                svg {
+                    path {
+                        fill: $white-color;
+                    }
+                }
+
+                &:hover {
+                    svg {
+                        path {
+                            fill: $blue-color;
+                        }
+                    }
+
+                    span {
+                        color: $blue-color;
+                    }
+                }
+
+                span {
+                    color: $white-color;
+                    margin-top: 10px;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+            }
+
+            svg {
+                margin-left: 0;
+            }
+        }
+    }
+    .social-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-top: 158px;
+
+        @media (max-width: 991px) {
+            margin-bottom: 50px;
+        }
+
+        svg {
+            margin-left: 22px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:hover {
+                path {
+                    fill: $blue-color;
+                }
+            }
+        }
     }
 }
 
@@ -369,10 +459,13 @@ h6 {
 .about-us-wrapper {
     overflow: visible;
     .main-box {
-        background: linear-gradient(to bottom, #cd3aff3d -12.85%, #1eccd64d 98.36%);
+        // background: linear-gradient(to left, #cd3aff29 -12.85%, #1eccd62e 98.36%);
+        background-image: url('/bg-about-us.png');
+        background-position: center;
+        background-size: cover;
         // opacity: 0.12;
         // filter: blur(150px);
-        backdrop-filter: blur(150px);
+        // backdrop-filter: blur(150px);
 
         // position: relative;
         // height: 500px;
@@ -609,8 +702,6 @@ h6 {
     }
 }
 
-
-
 .homepage {
     .bannerbg {
         background-image: url(/img/BGBlur.png);
@@ -622,13 +713,13 @@ h6 {
             margin: auto;
 
             h2 {
-                font-weight: 900;
+                font-weight: bold;
                 font-size: 60px;
-                color: #EED4FC;
+                color: #f8ebff;
                 line-height: 75px;
                 background: linear-gradient(to left, #eed4fc 0%, #e0fdff 100%);
                 -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                // -webkit-text-fill-color: transparent;
 
                 @media (max-width: 991px) {
                     font-size: 35px;
@@ -636,18 +727,16 @@ h6 {
                 }
 
                 span {
-                    color: #DD78FF;
+                    color: #dd78ff !important;
                 }
             }
 
             p {
                 font-weight: 500;
                 font-size: 18px;
-                color: #E0E0E0;
+                color: #e0e0e0;
                 opacity: 0.8;
                 margin-top: 35px;
-
-
             }
         }
 
@@ -680,18 +769,22 @@ h6 {
                 }
 
                 &:hover {
-                    box-shadow: 1px 1px 45px #56637B;
-                    background: linear-gradient(0deg, #111111, #111111), linear-gradient(270deg, #CD3AFF -12.85%, #1ECCD6 98.36%);
-                    border-image-source: linear-gradient(270deg, #CD3AFF -12.85%, #1ECCD6 98.36%);
+                    box-shadow: 1px 1px 45px #56637b;
+                    background: linear-gradient(0deg, #111111, #111111),
+                        linear-gradient(270deg, #cd3aff -12.85%, #1eccd6 98.36%);
+                    border-image-source: linear-gradient(270deg, #cd3aff -12.85%, #1eccd6 98.36%);
                     border-image-slice: 2;
                     padding: 15px 17px;
+                    border: double 1px transparent;
+                    border-radius: 15px;
+                    background-origin: border-box;
+                    background-clip: padding-box, border-box;
+                    cursor: pointer;
 
                     @media (max-width: 400px) {
                         padding: 10px;
-                        box-shadow: 1px 1px 17px #56637B;
-
+                        box-shadow: 1px 1px 17px #56637b;
                     }
-
                 }
 
                 img {
@@ -701,7 +794,7 @@ h6 {
                 }
 
                 p {
-                    color: #FFFFFF;
+                    color: #ffffff;
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
@@ -714,7 +807,7 @@ h6 {
         .iphoneDesign {
             text-align: center;
             margin-top: 50px;
-            transition: .8s;
+            transition: 0.8s;
             max-width: 750px;
             margin: auto;
             position: relative;
@@ -722,7 +815,6 @@ h6 {
             img {
                 width: 290px;
                 margin: auto;
-
             }
 
             .towImage {
@@ -739,7 +831,15 @@ h6 {
                     width: 100%;
                     display: block;
                 }
-
+            }
+            .mob-design {
+                background: linear-gradient(270deg, #CD3AFF -12.85%, #1ECCD6 98.36%);
+                opacity: 0.56;
+                filter: blur(100px);
+                position: absolute;
+                left: 35%;
+                top: 0;
+                visibility: hidden;
             }
 
             &:hover {
@@ -750,16 +850,12 @@ h6 {
                 .oneImage {
                     display: none;
                 }
+                .mob-design {
+                    visibility: visible;
+                }
             }
         }
-
-
-
-
     }
-
-
-
 
     .secoundtext {
         .container-md {
@@ -768,7 +864,7 @@ h6 {
             width: 100%;
 
             h4 {
-                color: #E8FAFB;
+                color: #e8fafb;
                 font-weight: 500;
                 font-size: 40px;
             }
@@ -776,7 +872,7 @@ h6 {
     }
 
     .homethirdBannerMain {
-        background: linear-gradient(270deg, #CD3AFF -12.85%, #1ECCD6 98.36%);
+        background: linear-gradient(270deg, #cd3aff -12.85%, #1eccd6 98.36%);
         opacity: 0.12;
         filter: blur(150px);
         transform: matrix(1, 0, 0, -1, 0, 0);
@@ -784,7 +880,7 @@ h6 {
     }
 
     .homefourBannerMain {
-        background: linear-gradient(270deg, #CD3AFF -12.85%, #1ECCD6 98.36%);
+        background: linear-gradient(270deg, #cd3aff -12.85%, #1eccd6 98.36%);
         opacity: 0.3;
         filter: blur(150px);
         height: 800px;
@@ -819,9 +915,7 @@ h6 {
                 }
 
                 .imageSlider {
-
                     img {
-
                         width: 380px;
                         display: block;
 
@@ -854,19 +948,16 @@ h6 {
                     p {
                         font-weight: 500;
                         font-size: 20px;
-                        color: #BDBDBD;
+                        color: #bdbdbd;
                         margin-top: 40px;
-
                     }
-
                 }
             }
-
         }
     }
 
     .homeFiveBannerMAin {
-        background: linear-gradient(270deg, #CD3AFF -12.85%, #1ECCD6 98.36%);
+        background: linear-gradient(270deg, #cd3aff -12.85%, #1eccd6 98.36%);
         opacity: 0.12;
         filter: blur(150px);
         transform: matrix(1, 0, 0, -1, 0, 0);
@@ -880,6 +971,9 @@ h6 {
     .ExcitingApps {
         margin-top: -1650px;
         position: relative;
+        .container {
+            max-width: 1280px !important;
+        }
 
         .heading {
             text-align: center;
@@ -894,8 +988,8 @@ h6 {
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 @media (max-width: 575px) {
-                   font-size: 45px;
-                   margin-bottom: 30px;
+                    font-size: 45px;
+                    margin-bottom: 30px;
                 }
             }
         }
@@ -928,7 +1022,6 @@ h6 {
                         display: none;
                     }
                 }
-
             }
         }
     }
@@ -950,7 +1043,7 @@ h6 {
             h5 {
                 font-weight: 900;
                 font-size: 40px;
-                color: #E0E0E0;
+                color: #e0e0e0;
                 padding: 40px 0 8px;
                 margin-bottom: 0;
 
@@ -997,21 +1090,23 @@ h6 {
                         // min-width: 125px;
                     }
 
-
-
                     &:hover {
-                        box-shadow: 1px 1px 45px #56637B;
-                        background: linear-gradient(0deg, #111111, #111111), linear-gradient(270deg, #CD3AFF -12.85%, #1ECCD6 98.36%);
-                        border-image-source: linear-gradient(270deg, #CD3AFF -12.85%, #1ECCD6 98.36%);
+                        box-shadow: 1px 1px 45px #56637b;
+                        background: linear-gradient(0deg, #111111, #111111),
+                            linear-gradient(270deg, #cd3aff -12.85%, #1eccd6 98.36%);
+                        border-image-source: linear-gradient(270deg, #cd3aff -12.85%, #1eccd6 98.36%);
                         border-image-slice: 2;
                         padding: 15px 17px;
+                        border: double 1px transparent;
+                        border-radius: 15px;
+                        background-origin: border-box;
+                        background-clip: padding-box, border-box;
 
                         @media (max-width: 400px) {
                             padding: 10px;
-                            box-shadow: 1px 1px 17px #56637B;
-
+                            box-shadow: 1px 1px 17px #56637b;
+                            cursor: pointer;
                         }
-
                     }
 
                     img {
@@ -1021,7 +1116,7 @@ h6 {
                     }
 
                     p {
-                        color: #FFFFFF;
+                        color: #ffffff;
                         font-style: normal;
                         font-weight: 400;
                         font-size: 16px;
@@ -1032,5 +1127,4 @@ h6 {
             }
         }
     }
-
 }

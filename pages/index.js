@@ -14,6 +14,7 @@ const BgLight2 = "/img/BgLight2.png"
 const Slider1 = "/img/slider-1.png"
 const Slider2 = "/img/slider-2.png"
 const Slider3 = "/img/slider-3.png"
+const mobDesign = "/bg-mobile.png"
 const Webtext = "/img/webtext.png"
 const Insights = "/img/Insights.png"
 const ShareText = "/img/ShareText.png"
@@ -41,7 +42,7 @@ export default function Home() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
   };
 
@@ -71,6 +72,7 @@ export default function Home() {
               {/* <div className="boxshodw" > 
               <img className="BgLight" src={BgLight} />
               </div> */}
+              <img className='mob-design' src={mobDesign}></img>
               <img className="oneImage" src={Iphone} />
               <img className="towImage" src={Iphone2} />
             </div>
