@@ -14,3 +14,6 @@ a {
 * {
   box-sizing: border-box;
 }
+.slick-dots li.slick-active button:before {
+  color: linear-gradient(270deg, #CD3AFF -12.85%, #1ECCD6 98.36%);
+}

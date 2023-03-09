@@ -460,7 +460,7 @@ h6 {
     overflow: visible;
     .main-box {
         // background: linear-gradient(to left, #cd3aff29 -12.85%, #1eccd62e 98.36%);
-        background-image: url('/bg-about-us.png');
+        background-image: url("/bg-about-us.png");
         background-position: center;
         background-size: cover;
         // opacity: 0.12;
@@ -704,7 +704,7 @@ h6 {
 
 .homepage {
     .bannerbg {
-        background-image: url(/img/BGBlur.png);
+        background-image: url(/bg-separate.png);
         background-size: cover;
 
         .textbanner {
@@ -833,13 +833,16 @@ h6 {
                 }
             }
             .mob-design {
-                background: linear-gradient(270deg, #CD3AFF -12.85%, #1ECCD6 98.36%);
+                background: linear-gradient(270deg, #cd3aff -12.85%, #1eccd6 98.36%);
                 opacity: 0.56;
                 filter: blur(100px);
                 position: absolute;
                 left: 35%;
                 top: 0;
                 visibility: hidden;
+                @media (max-width: 991px) {
+                    display: none;
+                }
             }
 
             &:hover {
@@ -862,7 +865,10 @@ h6 {
             max-width: 1080px;
             margin: auto;
             width: 100%;
-
+            position: relative;
+            .bg-separate {
+                background-image: url(/bg-line.png);
+            }
             h4 {
                 color: #e8fafb;
                 font-weight: 500;
@@ -1127,4 +1133,32 @@ h6 {
             }
         }
     }
+}
+.slick-dots {
+    display: block;
+    background: transparent;
+    height: 50px;
+    position: absolute !important;
+    bottom: 130px !important;
+    left: 44%;
+    width: 100px !important;
+    @media (max-width: 991px) {
+        display: none !important;
+    }
+}
+.slick-dots li.slick-active button {
+    background: linear-gradient(270deg, #cd3aff -12.85%, #1eccd6 98.36%) !important;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+}
+.slick-dots li button {
+    background: transparent;
+    border-radius: 50%;
+    border: 0.550725px solid #828282 !important;
+    height: 8px !important;
+    width: 8px !important;
+}
+.slick-dots li button:before {
+    visibility: hidden;
 }

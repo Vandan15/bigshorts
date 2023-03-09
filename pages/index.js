@@ -15,6 +15,7 @@ const Slider1 = "/img/slider-1.png"
 const Slider2 = "/img/slider-2.png"
 const Slider3 = "/img/slider-3.png"
 const mobDesign = "/bg-mobile.png"
+const bgLine = "/bg-line.png"
 const Webtext = "/img/webtext.png"
 const Insights = "/img/Insights.png"
 const ShareText = "/img/ShareText.png"
@@ -42,7 +43,7 @@ export default function Home() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
   };
 
@@ -84,7 +85,7 @@ export default function Home() {
         <div className="secoundtext">
           <div className="container-md">
             <h4>Experience the Ultimate <br /> Interactive App!</h4>
-
+            {/* <div className='bg-separate'></div> */}
           </div>
         </div>
         <div className="homefourBannerMain"></div>
