@@ -44,7 +44,7 @@ export default function Footer() {
         <p>© Copyright © 2023 Bigshorts. All rights reserved</p>
         <div className='btn-wrapper'>
           <button><Link href='/privacy-policy'>Privacy Policy</Link></button>
-          <button><Link href='/'>Terms & Condition</Link></button>
+          <button><Link href='/terms-and-condition'>Terms & Condition</Link></button>
         </div>
       </div>
     </div>

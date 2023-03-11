@@ -5,6 +5,7 @@ const Logo = '/logo.png'
 const banner1 = '/contact-us.jpg';
 const banner2 = '/about-us.jpg';
 const banner3 = '/policy.jpg';
+const banner4 = '/term.jpg';
 const playstoreIcon = "/img/ion_logo-google-playstore.png"
 
 const googlePlay = '/google-play.png';
@@ -124,6 +125,13 @@ export default function Header(props) {
         props.class == 'policy' && (
           <div className='banner-wrapper'>
             <img src={banner3}></img>
+          </div>
+        )
+      }
+      {
+        props.class == 'term' && (
+          <div className='banner-wrapper'>
+            <img src={banner4}></img>
           </div>
         )
       }

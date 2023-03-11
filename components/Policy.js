@@ -1,58 +1,43 @@
 import React from 'react'
 const logo = './logo.svg';
-export default function Policy() {
+export default function Term() {
     return (
         <div className='about-us-wrapper'>
             <div className='main-box'>
                 <div className='container'>
                     <div className='inner-box'>
-                        <h1>Privacy Policy</h1>
+                        <h1>Terms and Conditions</h1>
                         <div className='mb-5'>
-                            <p>At BigShorts, we respect the privacy of our users and understand the importance of keeping personal information secure. This Privacy Policy explains the types of information we collect, how we use it, and the choices you have regarding your information.</p>
+                            <p>Welcome to BigShorts, an Interactive Social Media App (the "App"). The following terms and conditions (the "Terms") govern your use of the App. By using the App, you agree to these Terms. If you do not agree to these Terms, you may not use the App.</p>
                         </div>
 
                         <div className='mb-5'>
-                            <h4>Information We Collect:</h4>
-                            <p>Personal information such as name, email address, and phone number
-                                Demographic information such as age, gender, and location
-                                User-generated content such as photos and videos
-                                usage data such as device information, IP address, and browsing activity
-                                social media account information if you choose to connect with BigShorts through social media platforms
+                            <h4>User Content:</h4>
+                            <p>a) All content and materials on the App, including but not limited to text, graphics, logos, icons, images, audio clips, and software, are owned by us or our licensors and are protected by applicable
                             </p>
-                        </div>
-                        <div className='mb-5'>
-                            <h4>How We Use Information:</h4>
-                            <p>To provide and improve our services and features</p>
-                            <p>To personalize user experience and recommend content</p>
-                            <p>To communicate with users about their account, updates, and promotions</p>
-                            <p>To monitor and analyze user behavior and improve our platform</p>
-                        </div>
-                        <div className='mb-5'>
-                            <h4>Information Sharing:</h4>
-                            <p>We do not sell or rent user information to third parties.</p>
-                            <p>We may share information with third-party service providers who assist us in operating our platform, processing payments, and providing customer support.</p>
-                            <p>We may share information with law enforcement agencies, government officials, or other third parties when required by law or in response to legal requests.</p>
-                        </div>
-                        <div className='mb-5'>
-                            <h4>Data Security:</h4>
-                            <p>We use reasonable measures to protect user information from unauthorized access, disclosure, alteration, or destruction. However, no security measures are perfect, and we cannot guarantee the security of user information.</p>
-                        </div>
-                        <div className='mb-5'>
-                            <h4>Data Retention:</h4>
-                            <p>We will retain user information for as long as necessary to provide our services or as required by law.</p>
-                        </div>
-                        <div className='mb-5'>
-                            <h4>Your Choices:</h4>
-                            <p>You may choose to delete or modify your personal information in your account settings. You may also opt-out of receiving promotional emails or push notifications from BigShorts.</p>
-                        </div>
-                        <div className='mb-5'>
+                            <p>b) You agree not to upload, post, or otherwise transmit User Content that: i) Infringes on any third-party intellectual property rights; ii) Is unlawful, harmful, threatening, abusive, harassing, tortious, defamatory, vulgar, obscene, libellous, invasive of another's privacy, hateful, or racially, ethnically, or otherwise objectionable; iii) Contains viruses, corrupted data, or other harmful, disruptive, or destructive files; iv) Impersonates any person or entity, including but not limited to any of our employees, or falsely states or otherwise misrepresents your affiliation with a person or entity; or v) Violates any applicable laws or regulations.</p>
 
-                            <h4>Changes to Privacy Policy:</h4>
-                            <p>We may update this Privacy Policy from time to time, and we encourage users to review it periodically.</p>
                         </div>
                         <div className='mb-5'>
-                            <h4>Contact Us:</h4>
-                            <p>If you have any questions or concerns regarding our Privacy Policy, please contact us at <a href='mailto:notification@bigshorts.in'>notification@bigshorts.in</a>.</p>
+                            <h4>Intellectual Property: </h4>
+                            <p>a) All content and materials on the App, including but not limited to text, graphics, logos, icons, images, audio clips, and software, are owned by us or our licensors and are protected by applicable intellectual property laws.</p>
+                            <p>b) You may not reproduce, modify, distribute, transmit, display, perform, publish, license, create derivative works from, or sell any content or materials obtained from the App without our prior written permission.</p>
+                            <p>c) You may not use any trademarks, service marks, or logos appearing on the App without our prior written permission.</p>
+                        </div>
+                        <div className='mb-5'>
+                            <h4>User Conduct:</h4>
+                            <p>a) You agree to use the App only for lawful purposes and in a manner consistent with these Terms. </p>
+                            <p>b) You agree not to use the App to: i) Harass or intimidate any person; ii) Harm minors in any way; iii) Impersonate any person or entity or falsely represent your affiliation with any person or entity; iv) Engage in any conduct that is unlawful, harmful, threatening, abusive, harassing, tortious, defamatory, vulgar, obscene, libellous, invasive of another's privacy, hateful, or racially, ethnically, or otherwise objectionable; v) Upload, post, or otherwise transmit any User Content that contains viruses, corrupted data, or other harmful, disruptive, or destructive files; vi) Interfere with or disrupt the App or servers or networks connected to the App, or disobey any requirements, procedures, policies, or regulations of networks connected to the App; vii. Violate any applicable laws or regulations.</p>
+                        </div>
+                        <div className='mb-5'>
+                            <h4>Disclaimer of Warranties:</h4>
+                            <p>a) The App and all content and materials on the App are provided on an "as is" and "as available" basis without any warranties of any kind, either express or implied. </p>
+                            <p>b) We do not warrant that the App or any content or materials on the App will be uninterrupted or error-free, that defects will be corrected, or that the App or any content or materials on the App are free of viruses or other harmful components.</p>
+                            <p>c)c) We disclaim all warranties, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+                        </div>
+                        <div className='mb-5'>
+                            <h4>Limitation of Liability:</h4>
+                            <p>a) We will not be liable for any direct, indirect, incidental, special, or consequential damages arising from the use of or inability to use the App or any content</p>
                         </div>
                     </div>
                 </div>
